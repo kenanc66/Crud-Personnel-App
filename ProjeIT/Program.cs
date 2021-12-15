@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using ProjeIT.Context;
-using ProjeIT.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +9,7 @@ builder.Services.AddDbContext<ProjeITContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionVariable"));
 });
-builder.Services.AddScoped<IDepartmentService, DepartmentManager >();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
