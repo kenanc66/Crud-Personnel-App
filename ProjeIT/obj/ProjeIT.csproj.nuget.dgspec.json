@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kenan\\Desktop\\testIT\\ProjeIT\\ProjeIT.csproj": {}
+    "C:\\Users\\kenan\\source\\repos\\kenanc66\\Crud-Personnel-App\\ProjeIT\\ProjeIT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kenan\\Desktop\\testIT\\ProjeIT\\ProjeIT.csproj": {
+    "C:\\Users\\kenan\\source\\repos\\kenanc66\\Crud-Personnel-App\\ProjeIT\\ProjeIT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenan\\Desktop\\testIT\\ProjeIT\\ProjeIT.csproj",
+        "projectUniqueName": "C:\\Users\\kenan\\source\\repos\\kenanc66\\Crud-Personnel-App\\ProjeIT\\ProjeIT.csproj",
         "projectName": "ProjeIT",
-        "projectPath": "C:\\Users\\kenan\\Desktop\\testIT\\ProjeIT\\ProjeIT.csproj",
+        "projectPath": "C:\\Users\\kenan\\source\\repos\\kenanc66\\Crud-Personnel-App\\ProjeIT\\ProjeIT.csproj",
         "packagesPath": "C:\\Users\\kenan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenan\\Desktop\\testIT\\ProjeIT\\obj\\",
+        "outputPath": "C:\\Users\\kenan\\source\\repos\\kenanc66\\Crud-Personnel-App\\ProjeIT\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

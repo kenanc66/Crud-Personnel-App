@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jh6hOUioUPoq3J2+vHx5v0WoH0tsx0JX3aKJBDOF4OKfBtMz1D5DBdCh8por2+NpeS2zAAyzZ2YJmmiWxXqKCg==",
+  "dgSpecHash": "WSNxIMp+ghvxVnuUvfnq4B8rbl7A6YDFJEMdkEbfoQfua7QojNk+OCAQAbihDLUup8l4RFmhiqxH37JgLTj72Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kenan\\Desktop\\testIT\\ProjeIT\\ProjeIT.csproj",
+  "projectFilePath": "C:\\Users\\kenan\\source\\repos\\kenanc66\\Crud-Personnel-App\\ProjeIT\\ProjeIT.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kenan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\kenan\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

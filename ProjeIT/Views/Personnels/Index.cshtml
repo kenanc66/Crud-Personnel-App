@@ -42,6 +42,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.LastGraduation)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Department)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -77,6 +80,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.LastGraduation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Department.DepartmentId)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.PersonnelId">Edit</a> |

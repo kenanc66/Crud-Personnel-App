@@ -4,6 +4,6 @@
     {
         public int DepartmentId { get; set; }
         public string DepartmentName { get; set; }
-        public List<Personnel> Personnels { get; set; } = new List<Personnel>();
+        public ICollection<Personnel> Personnels { get; set; } = new List<Personnel>();
     }
 }

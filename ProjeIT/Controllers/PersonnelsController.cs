@@ -22,7 +22,8 @@ namespace ProjeIT.Controllers
         // GET: Personnels
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Personnel.ToListAsync());
+            var projeITContext = _context.Personnel.Include(p => p.Department);
+            return View(await projeITContext.ToListAsync());
         }
 
         // GET: Personnels/Details/5
@@ -34,6 +35,7 @@ namespace ProjeIT.Controllers
             }
 
             var personnel = await _context.Personnel
+                .Include(p => p.Department)
                 .FirstOrDefaultAsync(m => m.PersonnelId == id);
             if (personnel == null)
             {
@@ -46,15 +48,14 @@ namespace ProjeIT.Controllers
         // GET: Personnels/Create
         public IActionResult Create()
         {
+            ViewData["DepartmentId"] = new SelectList(_context.Department, "DepartmentId", "DepartmentId");
             return View();
         }
 
         // POST: Personnels/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PersonnelId,IdentityNumber,Name,Position,Email,Adress,BirthPlace,PhoneNumber,SecondaryNumber,BloodType,LastGraduation")] Personnel personnel)
+        public async Task<IActionResult> Create([Bind("PersonnelId,IdentityNumber,Name,Position,Email,Adress,BirthPlace,PhoneNumber,SecondaryNumber,BloodType,LastGraduation,DepartmentId")] Personnel personnel)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +63,7 @@ namespace ProjeIT.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["DepartmentId"] = new SelectList(_context.Department, "DepartmentId", "DepartmentId", personnel.DepartmentId);
             return View(personnel);
         }
 
@@ -78,15 +80,14 @@ namespace ProjeIT.Controllers
             {
                 return NotFound();
             }
+            ViewData["DepartmentId"] = new SelectList(_context.Department, "DepartmentId", "DepartmentId", personnel.DepartmentId);
             return View(personnel);
         }
 
-        // POST: Personnels/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PersonnelId,IdentityNumber,Name,Position,Email,Adress,BirthPlace,PhoneNumber,SecondaryNumber,BloodType,LastGraduation")] Personnel personnel)
+        public async Task<IActionResult> Edit(int id, [Bind("PersonnelId,IdentityNumber,Name,Position,Email,Adress,BirthPlace,PhoneNumber,SecondaryNumber,BloodType,LastGraduation,DepartmentId")] Personnel personnel)
         {
             if (id != personnel.PersonnelId)
             {
@@ -113,6 +114,7 @@ namespace ProjeIT.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["DepartmentId"] = new SelectList(_context.Department, "DepartmentId", "DepartmentId", personnel.DepartmentId);
             return View(personnel);
         }
 
@@ -125,6 +127,7 @@ namespace ProjeIT.Controllers
             }
 
             var personnel = await _context.Personnel
+                .Include(p => p.Department)
                 .FirstOrDefaultAsync(m => m.PersonnelId == id);
             if (personnel == null)
             {
