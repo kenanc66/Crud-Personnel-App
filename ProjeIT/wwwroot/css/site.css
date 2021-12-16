@@ -1,12 +1,9 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
+    
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
+
 
 html {
   position: relative;
@@ -14,7 +11,8 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    font-weight: bold;
 }
 @import url('https://fonts.googleapis.com/css?family=Amarante');
 
@@ -47,13 +45,58 @@ body {
     padding: 22px 10px;
     padding-bottom: 55px;
 }
-/*Own CSS*/
+/*My Own CSS     /////////////////////////////        */
+label{
+    margin-top:0.4rem;
+    margin-bottom:0.4rem;
+}
+
+.button {
+    background-color: #04AA6D;
+    padding:8px;
+    font-size:0.7rem !important;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+    border-radius:0;
+}
+td > a{
+    text-decoration:none;
+}
+
+.coloring {
+    padding: 0.5rem !important;
+    color: white !important;
+    font-weight:bold;
+    display:inline-block;
+    border:none;
+
+}
+.coloring:hover{
+    color:white;
+}
+td > .coloring:nth-child(1) {
+    
+    background-color:green;
+    
+}
+    td > .coloring:nth-child(2) {
+        background-color: blue;
+        
+    }
+    td > .coloring:nth-child(3) {
+        background-color: red;
+        
+    }
 .create {
     background-color: #04AA6D;
     padding:0.5rem;
     text-decoration:none;
     color:white;
 }
+    .create:hover {
+        background-color: #0D6EFD;
+        color:white;
+    }
 .table {
     background-color: white;
     margin-top: 1rem;
@@ -63,8 +106,8 @@ body {
     padding: 0.5rem;
     overflow-x: auto;
 }
-tr:hover {
-    background-color: yellow;
+.fontsize{
+    font-size:0.9rem;
 }
 tr:nth-child(even) {
     background-color: #f2f2f2;
@@ -72,11 +115,25 @@ tr:nth-child(even) {
 .tableHeader {
     background-color: #04AA6D;
     color:white;
-    font-size:bold;
 }
 th td {
    
     padding: 8px;
+}
+.blue {
+    background-color: blue;
+    padding: 0.5rem;
+}
+.red {
+    background-color: red;
+    padding: 0.5rem;
+}
+.green {
+    background-color: green;
+    padding: 0.5rem;
+}
+.dt{
+    margin-top:0.9rem;
 }
 .navContent {
     font-size: 1rem;
@@ -85,134 +142,163 @@ th td {
     display:flex;
     justify-content:space-around;
 }
-/*CSS END*/
-::selection {
-    background: #5f74a0;
-    color: #fff;
+.details{
+    font-size:1rem;
 }
 
-::-moz-selection {
-    background: #5f74a0;
-    color: #fff;
-}
-
-::-webkit-selection {
-    background: #5f74a0;
-    color: #fff;
-}
-
-br {
-    display: block;
-    line-height: 1.6em;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-input, textarea {
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    outline: none;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
-    blockquote:before, blockquote:after, q:before, q:after {
-        content: '';
-        content: none;
+@media screen and (min-width: 1400px) and (max-width: 3000px) {
+    header > nav {
+        width: 1296px !important;
     }
-
-strong, b {
-    font-weight: bold;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-img {
-    border: 0;
-    max-width: 100%;
-}
-
-h1 {
-    font-family: 'Amarante', Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 3.6em;
-    line-height: 1.7em;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-
-/** page structure **/
-#wrapper {
-    display: block;
+    header {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
     
-    background: #fff;
-    margin: 0 auto;
-    padding: 10px 17px;
-    -webkit-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35);
 }
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    header > nav {
+        width: 1116px;
+    }
+    header {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
 
-#keywords {
-    margin: 0 auto;
-    font-size: 1.2em;
-    margin-bottom: 15px;
-}
 
-
-    #keywords thead {
-        cursor: pointer;
-        background: #c9dff0;
+    header {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+ /*CSS END    /////////////////////////         */
+    ::selection {
+        background: #5f74a0;
+        color: #fff;
     }
 
-        #keywords thead tr th {
-            font-weight: bold;
-            padding: 12px 30px;
-            padding-left: 42px;
-        }
-
-            #keywords thead tr th span {
-                padding-right: 20px;
-                background-repeat: no-repeat;
-                background-position: 100% 100%;
-            }
-
-            #keywords thead tr th.headerSortUp, #keywords thead tr th.headerSortDown {
-                background: #acc8dd;
-            }
-
-                #keywords thead tr th.headerSortUp span {
-                   
-                }
-
-                #keywords thead tr th.headerSortDown span {
-                    
-                }
-
-
-    #keywords tbody tr {
-        color: #555;
+    ::-moz-selection {
+        background: #5f74a0;
+        color: #fff;
     }
 
-        #keywords tbody tr td {
-            text-align: center;
-            padding: 15px 10px;
+    ::-webkit-selection {
+        background: #5f74a0;
+        color: #fff;
+    }
+
+    br {
+        display: block;
+        line-height: 1.6em;
+    }
+
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+
+    ol, ul {
+        list-style: none;
+    }
+
+    input, textarea {
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    blockquote, q {
+        quotes: none;
+    }
+
+        blockquote:before, blockquote:after, q:before, q:after {
+            content: '';
+            content: none;
         }
 
-            #keywords tbody tr td.lalign {
-                text-align: left;
+    strong, b {
+        font-weight: bold;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    img {
+        border: 0;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-family: 'Amarante', Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 3.6em;
+        line-height: 1.7em;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+
+    /** page structure **/
+    #wrapper {
+        display: block;
+        background: #fff;
+        margin: 0 auto;
+        padding: 10px 17px;
+        -webkit-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35);
+    }
+
+    #keywords {
+        margin: 0 auto;
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+
+        #keywords thead {
+            cursor: pointer;
+            background: #c9dff0;
+        }
+
+            #keywords thead tr th {
+                font-weight: bold;
+                padding: 12px 30px;
+                padding-left: 42px;
             }
+
+                #keywords thead tr th span {
+                    padding-right: 20px;
+                    background-repeat: no-repeat;
+                    background-position: 100% 100%;
+                }
+
+                #keywords thead tr th.headerSortUp, #keywords thead tr th.headerSortDown {
+                    background: #acc8dd;
+                }
+
+                    #keywords thead tr th.headerSortUp span {
+                    }
+
+                    #keywords thead tr th.headerSortDown span {
+                    }
+
+
+        #keywords tbody tr {
+            color: #555;
+        }
+
+            #keywords tbody tr td {
+                text-align: center;
+                padding: 15px 10px;
+            }
+
+                #keywords tbody tr td.lalign {
+                    text-align: left;
+                }
