@@ -546,10 +546,6 @@ C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\MessagePack.Annotations.dll
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\Microsoft.Build.dll
-C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\Microsoft.Build.Framework.dll
-C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\Microsoft.Build.Tasks.Core.dll
-C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\Microsoft.Build.Utilities.Core.dll
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -597,7 +593,6 @@ C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\NuGet.ProjectModel.dll
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\NuGet.Protocol.dll
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\NuGet.Versioning.dll
-C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\System.CodeDom.dll
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\System.Composition.AttributedModel.dll
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\System.Composition.Convention.dll
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\System.Composition.Hosting.dll
@@ -606,7 +601,6 @@ C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\System.Drawing.Common.dll
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\System.Resources.Extensions.dll
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\System.Runtime.Caching.dll
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\System.Security.Permissions.dll
@@ -799,3 +793,4 @@ C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\obj\Debug\net6.0
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\obj\Debug\net6.0\ref\ProjeIT.dll
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\obj\Debug\net6.0\ProjeIT.pdb
 C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\obj\Debug\net6.0\ProjeIT.genruntimeconfig.cache
+C:\Users\kenan\source\repos\kenanc66\Crud-Personnel-App\ProjeIT\bin\Debug\net6.0\Microsoft.Build.Locator.dll

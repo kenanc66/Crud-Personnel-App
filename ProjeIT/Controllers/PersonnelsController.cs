@@ -1,4 +1,5 @@
-﻿using System;
+﻿#nullable disable
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -48,15 +49,18 @@ namespace ProjeIT.Controllers
         // GET: Personnels/Create
         public IActionResult Create()
         {
-            ViewData["DepartmentId"] = new SelectList(_context.Department, "DepartmentId", "DepartmentId");
+            ViewData["DepartmentId"] = new SelectList(_context.Department, "DepartmentId", "DepartmentName");
             return View();
         }
 
         // POST: Personnels/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("PersonnelId,IdentityNumber,Name,Position,Email,Adress,BirthPlace,PhoneNumber,SecondaryNumber,BloodType,LastGraduation,DepartmentId")] Personnel personnel)
         {
+            ModelState.Remove("Department");
             if (ModelState.IsValid)
             {
                 _context.Add(personnel);
@@ -84,7 +88,9 @@ namespace ProjeIT.Controllers
             return View(personnel);
         }
 
-        
+        // POST: Personnels/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("PersonnelId,IdentityNumber,Name,Position,Email,Adress,BirthPlace,PhoneNumber,SecondaryNumber,BloodType,LastGraduation,DepartmentId")] Personnel personnel)
